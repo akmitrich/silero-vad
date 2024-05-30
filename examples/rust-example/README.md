@@ -3,6 +3,11 @@ Made after [C++ stream example](https://github.com/snakers4/silero-vad/tree/mast
 
 ## Dependencies
 - To build Rust crate `ort` you need `cc` installed.
+- Make available lib onnxruntime dynamic/shared object for dynamic loading in your system. For example on Debian/Ubuntu add file `onnruntime.conf` to `/etc/ld.so.conf.d` directory with the following content:
+```
+/path/to/onnruntime/lib
+```
+- More about linking `ort` crate with `onnxruntime` [here](https://ort.pyke.io/setup/linking).
 
 ## Usage
 Just
